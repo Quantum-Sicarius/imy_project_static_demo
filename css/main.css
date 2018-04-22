@@ -369,6 +369,16 @@ nav a {
     color: #fff;
 }
 
+#user_profile_view {
+    width: 30%
+}
+
+#user_profile_view .mdl-card__title {
+    color: #fff;
+    height: 206px;
+    background: url('../img/user.jpg') center / cover;
+}
+
   
 /* ==========================================================================
    Helper classes
