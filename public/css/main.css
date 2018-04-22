@@ -331,8 +331,7 @@ textarea {
 
 
 #shopping_cart {
-    width: 60%;
-
+    width: 554px;
 }
 
 
@@ -370,7 +369,7 @@ nav a {
 }
 
 #user_profile_view {
-    width: 30%
+    width: 354px;
 }
 
 #user_profile_view .mdl-card__title {
