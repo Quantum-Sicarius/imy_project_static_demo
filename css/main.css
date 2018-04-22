@@ -346,6 +346,12 @@ textarea {
     background: url('../img/NV-vs-AMD-640x353.jpg') center / cover;
 }
 
+#motherboards .mdl-card__title {
+    color: #fff;
+    height: 206px;
+    background: url('../img/roman-spiridonov-629353-unsplash.jpg') center / cover;
+}
+
 
 
   
