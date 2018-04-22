@@ -352,7 +352,9 @@ textarea {
     background: url('../img/roman-spiridonov-629353-unsplash.jpg') center / cover;
 }
 
-
+nav a {
+    color: #fff;
+}
 
   
 /* ==========================================================================
