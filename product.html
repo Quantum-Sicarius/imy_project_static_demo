@@ -79,15 +79,17 @@
                             <div class="mdl-grid">
                                 <div  id="product_view" class="demo-card-wide mdl-card mdl-shadow--2dp">
                                     <div class="mdl-card__title">
-                                        <h2 class="mdl-card__title-text">Product</h2>
+                                        <h2 class="mdl-card__title-text">EVGA GeForce GTX 1070Ti GPU</h2>
                                     </div>
                                     <div class="mdl-card__supporting-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                                        <h4>R 10,775.00</h4>
+
+                                        EVGA GeForce GTX 1070Ti GPU, 8GB GDDR5, 256-Bit Memory Bus, PCI-Express x16 3.0, Display Configuration: 1x DVI-D Port, 1x HDMI 2.0a Port, 3x DisplayPort 1.4, Clock Speeds: GPU: 1607MHz+ (Base) & 1683MHz+ (Boost)/ Memory: 8008MHz, Features: EVGA Precision, NVIDIA 3D Vision/ Surround/ GPU Boost 3.0/ G-SYNC/ CUDA/ PhysX/ Adaptive V-Sync/ DSR/ TXAA/ SLI HB, DirectX 12 (12.1 API), Vulkan/OGL
+
                                     </div>
                                     <div class="mdl-card__actions mdl-card--border">
-                                        <a href="/product.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                        View Product
+                                        <a  id="demo-show-snackbar" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Add to cart
                                         </a>
                                     </div>
                                     <div class="mdl-card__menu">
@@ -102,7 +104,11 @@
               </div>
         </div>
   
-
+        <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+            <div class="mdl-snackbar__text"></div>
+            <button class="mdl-snackbar__action" type="button"></button>
+        </div>
+        
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
@@ -116,5 +122,26 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+        <script>
+            (function() {
+              'use strict';
+              var snackbarContainer = document.querySelector('#demo-snackbar-example');
+              var showSnackbarButton = document.querySelector('#demo-show-snackbar');
+              var handler = function(event) {
+                showSnackbarButton.style.backgroundColor = '';
+              };
+              showSnackbarButton.addEventListener('click', function() {
+                'use strict';
+                var data = {
+                  message: 'Added to cart!',
+                  timeout: 2000,
+                  actionHandler: handler,
+                  actionText: 'Undo'
+                };
+                snackbarContainer.MaterialSnackbar.showSnackbar(data);
+              });
+            }());
+            </script>
     </body>
 </html>
