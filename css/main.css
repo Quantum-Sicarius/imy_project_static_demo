@@ -333,11 +333,22 @@ textarea {
 #product_view {
     width: 100%;
   }
+  
+#cpus .mdl-card__title{
+    color: #fff;
+    height: 206px;
+    background: url('../img/AMD_vs_Intel_Challenge.jpg') center / cover;
+}
+
+#graphiccards .mdl-card__title {
+    color: #fff;
+    height: 206px;
+    background: url('../img/NV-vs-AMD-640x353.jpg') center / cover;
+}
 
 
 
-
-
+  
 /* ==========================================================================
    Helper classes
    ========================================================================== */
